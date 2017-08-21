@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="root_color">@color/colorRoot_light</item>
+        <!--<item name="line_color">@color/colorLine_light</item>-->
+        <!--<item name="title_color">@color/colorTextTitle_light</item>-->
+        <!--<item name="subtitle_color">@color/colorTextSubtitle_light</item>-->
+        <!--<item name="content_color">@color/colorTextContent_light</item>-->
+
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <!-- main activity. -->
+
+    <style name="AppTheme.Main" parent="AppTheme">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sampson.android.mydemos">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--allowBackup标志为true，用户可以通过adb backup和adb restore来进行应用数据的备份和恢复-->
+    <!--supportsRtl是否支持从右向左的布局-->
+    <!--largeHeap请求系统为Dalvik分配更大的内存空间-->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.Main">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".views.CustomView.BezierCurve.BezierActivity" />
+
+        <activity android:name=".views.NativeViewPlus.ViewPager.ViewPagerDemoActivity" />
+
+        <activity android:name=".service.ServiceManagerActivity" />
+
+
+        <service android:name=".service.BasicService" />
+
+        <service
+            android:name=".service.RemoteService"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.sampson.android.mydemos.service.RemoteAIDLService" />
+            </intent-filter>
+
+        </service>
+    </application>
+
+</manifest>

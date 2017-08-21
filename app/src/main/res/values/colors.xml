@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 紫色 -->
+    <color name="colorRoot_light">#8600FF</color>
+    <!--绿色-->
+    <color name="colorLine_light">#00BB00</color>
+    <!--天蓝色-->
+    <color name="colorTextTitle_light">#00FFFF</color>
+    <!--黄色-->
+    <color name="colorTextSubtitle_light">#F9F900</color>
+    <!--橙色-->
+    <color name="colorTextContent_light">#F75000</color>
+
+
+</resources>
